@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>07Canvas案例-精灵面向对象</title>
+		<script src="js/Sprite.js"></script>
+	</head>
+<body>
+
+	<div id="container">
+		<canvas id="cavsElem">
+			你的浏览器不支持canvas，请升级浏览器
+		</canvas>
+	</div>
+
+	<button id="btn-dir-left">←</button>
+	<button id="btn-dir-right">→</button>
+	<button id="btn-dir-up">↑</button>
+	<button id="btn-dir-down">↓</button>
+
+	<script>
+		(function(){
+			var canvas = document.querySelector( '#cavsElem' );
+			var ctx = canvas.getContext( '2d' );
+
+			canvas.width = 600;
+			canvas.height = 600;
+			canvas.style.border = "1px solid #000";
+
+			// 封装一个对象出来：
+			// 属性： width . height  imgSr  speed  dir
+			// 行为： render  changeDir  
+			
+			//创建一个精灵对象
+			var s = new Sprite({
+				x: 300,
+				y: 300,
+				w: 80,
+				h: 65*2,
+				fps: 4,
+				originW: 40,
+				originH: 65,
+				imgSrc: 'imgs/gameImgs/DMMban.png'
+			}); 
+
+			//渲染 动画
+			s.render(ctx);
+
+
+			//绑定按钮的点击事件
+			var btnLeft = document.getElementById('btn-dir-left');
+			btnLeft.onclick = function() {
+				//小哥哥朝着左方向
+				// dirIndex = 1;
+				s.changeDir('left');
+			};
+
+			var btnRight = document.getElementById('btn-dir-right');
+			btnRight.onclick = function() {
+				//小哥哥朝着方向
+				// dirIndex = 2;
+				s.changeDir('right');
+
+			};
+
+			var btnUp = document.getElementById("btn-dir-up");
+			btnUp.onclick = function() {
+				//小哥哥朝着左方向
+				// dirIndex = 3;
+				s.changeDir('up');
+
+			};
+
+			var btnDown = document.getElementById('btn-dir-down');
+			btnDown.onclick = function() {
+				//小哥哥朝着左方向
+				// dirIndex = 0;
+				s.changeDir('down');
+
+			};
+
+
+
+
+		}());
+	</script>
+</body>
+</html>

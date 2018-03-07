@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<title>02 webitcast案例</title>
+	<style>
+		body {
+			padding: 0;
+			margin: 0;
+			background-color: #f0f0f0;
+			overflow: hidden;
+		}
+	</style>
+	<script src="bower_components/konva/konva.min.js"></script>
+	<script src="js/CircleText.js"></script>
+</head>
+<body>
+	<div id="container">
+	</div>
+
+	<script>
+		//创建舞台
+		var stage = new Konva.Stage({
+			container: 'container',
+			width: window.innerWidth,//全屏
+			height: window.innerHeight
+		});
+
+		//中心点坐标
+		var cenX = stage.width() / 2;
+		var cenY = stage.height() / 2;
+
+		//创建一个底层的圆
+		
+		var innerRadius = 250/2;//背景层的内圆半径
+		var outerRadius = 435/2;//背景成的外圆半径
+		
+		//创建背景层
+		var bgLayer = new Konva.Layer();
+		stage.add(bgLayer);
+
+		//绘制背景层内部的线圆
+		var innerCircleLine = new Konva.Circle({
+			x: cenX,
+			y: cenY,
+			radius: innerRadius,
+			dash: [10,4],
+			stroke: '#B5B7C6',
+			strokeWidth: 2
+		});
+
+		bgLayer.add( innerCircleLine);
+
+		//绘制背景层外部的线圆
+		var outerCircleLine = new Konva.Circle({
+			x: cenX,
+			y: cenY,
+			radius: outerRadius,
+			dash: [10,4],
+			stroke: '#D8D8D8',
+			strokeWidth: 2
+		});
+
+		bgLayer.add( outerCircleLine );
+
+
+		//绘制背景层的中心员
+		var centerCircle = new Konva.Circle({
+			x: cenX,
+			y: cenY,
+			radius: 132 / 2,
+			fill: '#525A82'
+		});
+		bgLayer.add( centerCircle );
+
+		//绘制中心圆的圆环
+		var centerRing = new Konva.Ring({
+			x: cenX,
+			y: cenY,
+			innerRadius: 132/2,
+			outerRadius: 180/2,
+			fill: '#E1E1E1',
+			opacity: .5
+		});
+
+		bgLayer.add( centerRing );
+
+		var circleText = new Konva.Text({
+			x: cenX -180/2,
+			y: cenY-17/2,
+			width: 180,
+			align: 'center',
+			text: 'Web全栈',
+			fontFamily: '微软雅黑',
+			fontSize: 17,
+			fontStyle: 'bold',
+			fill: '#fff'
+		});
+		bgLayer.add(circleText);
+
+
+		bgLayer.draw();
+
+
+
+		//创建第二层动画层
+		var animateLayer = new Konva.Layer();
+		stage.add(animateLayer);
+
+		var groupL2 = new Konva.Group({
+			x: cenX,
+			y: cenY,
+		});
+		animateLayer.add( groupL2 );
+
+		var circleTextHtml5 = new CircleText({
+			x: 0 + innerRadius * Math.cos(-30*Math.PI/180),
+			y: 0 + innerRadius * Math.sin(-30*Math.PI/180),
+			innerRadius: 30,
+			outerRadius: 40,
+			innerStyle: '#FACED6',
+			outerStyle: '#E0E0E0',
+			text: 'HTML5',
+
+		});
+
+		circleTextHtml5.addToGroupOrLayer( groupL2 );
+
+
+		var circleTextCss3 = new CircleText({
+			x: 0 + innerRadius * Math.cos(120*Math.PI/180),
+			y: 0 + innerRadius * Math.sin(120*Math.PI/180),
+			innerRadius: 30,
+			outerRadius: 40,
+			innerStyle: '#FABB48',
+			outerStyle: '#E0E0E0',
+			text: 'Css3 ',
+
+		});
+		circleTextCss3.addToGroupOrLayer( groupL2 );
+
+		circleTextHtml5.addToGroupOrLayer( groupL2 );
+
+		//创建第三层
+		var groupL3 = new Konva.Group({
+			x: cenX,
+			y: cenY
+		});
+		animateLayer.add( groupL3 );
+
+		var circleTextCanvas = new CircleText({
+			x: outerRadius * Math.cos(170*Math.PI/180),
+			y: outerRadius * Math.sin(170*Math.PI/180),
+			innerRadius: 40,
+			outerRadius: 50,
+			innerStyle: '#D863A3',
+			outerStyle: '#E0E0E0',
+			text: 'Css3 ',
+		});
+		circleTextCanvas.addToGroupOrLayer( groupL3 );
+
+		animateLayer.draw();
+
+
+		var rotateAnglPerSecond = 30;
+		var animate = new Konva.Animation(function(frame){
+			var angle = rotateAnglPerSecond * frame.timeDiff / 1000;
+			groupL2.rotate( angle );
+			groupL2.getChildren().each(function(item,index){
+				item.rotate( -angle );
+			});
+
+			groupL3.rotate( -angle );
+			groupL3.getChildren().each(function(item,index){
+				item.rotate( angle );
+			});
+		}, animateLayer);
+		animate.start();
+
+		animateLayer.on('mouseover', function() {
+			rotateAnglPerSecond = 10;
+		});
+		animateLayer.on('mouseout', function(){
+			rotateAnglPerSecond = 30;
+		})
+
+	</script>
+</body>
+</html>

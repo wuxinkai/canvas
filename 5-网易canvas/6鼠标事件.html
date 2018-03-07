@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body style="background: #000">
+<canvas height="600" width="600" id="canvas"></canvas>
+</body>
+</html>
+<script type="text/javascript">
+    var oc =document.getElementById("canvas");
+    var oGC =oc.getContext('2d');
+
+    oc.onmousedown =function (ev) {
+       var ev = ev || window.event;
+       oGC.moveTo(ev.clientX-oc.offsetLeft,ev.clientY-oc.offsetTop); //我们在画布上点的这一点
+       document.onmousemove =function (ev2) {  //进入
+           var ev = ev || window.event;
+           oGC.lineTo(ev.clientX-oc.offsetLeft,ev.clientY-oc.offsetTop);
+           oGC.stroke();
+       }
+       document.onmouseup =function (ev2) { //离开
+           document.onmousemove =null;
+           document.onmouseup =null;
+       }
+   }
+
+</script>

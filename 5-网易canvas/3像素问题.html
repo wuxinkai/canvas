@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <canvas id="canvas" width="600" height="600"></canvas>
+</body>
+</html>
+<script type="text/javascript">
+    var canvas =document.getElementById('canvas');
+
+    var ogc  =canvas.getContext('2d');
+
+    //ogc.fillRect(50.5,50.5,100,100);//默认颜色是黑色
+
+    ogc.fillStyle='red'; //设置颜色
+
+    ogc.lineWidth=15; //设置边框宽度
+
+    //边界连接点样式
+    // miter（默认）
+    // round（圆角）
+    //bevel 折角
+    ogc.lineJoin='bevel';//圆角
+
+    // 端点样式
+    // square（高度多出为宽度的一半值）
+
+    ogc.strokeRect(50.5,50.5,100,100);//带边框的方块
+
+    ogc.fillRect(50.5,50.5,100,100) //设置边框   和strokeRect顺序不同样式不一样
+
+
+
+</script>

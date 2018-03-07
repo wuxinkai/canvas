@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>12Canvas案例-canvas优化</title>
+		<script src="js/ItcastRect.js"></script>
+	</head>
+<body>
+
+	<div id="container">
+		<canvas id="cavsElem">
+			你的浏览器不支持canvas，请升级浏览器
+		</canvas>
+	</div>
+
+	<script>
+		(function(){
+			var canvas = document.querySelector( '#cavsElem' );
+			var ctx = canvas.getContext( '2d' );
+
+			canvas.width = 600;
+			canvas.height = 600;
+			canvas.style.border = "1px solid #000";
+
+			var canvasHide = document.createElement('canvas');
+			canvasHide.width = canvas.width;
+			canvasHide.height = canvas.height;
+			var ctxHide = canvasHide.getContext('2d');
+
+
+			
+			for( var i= 0; i < 10000; i++ ) {
+				var r = new ItcastRect({
+					x: Math.random() * 100,
+					y: Math.random() * 100,
+					w: Math.random() * 100,
+					h: Math.random() * 100,
+					rotation: Math.random() * 90,
+					opacity: Math.random()
+				});
+				r.render(ctxHide);
+			}
+
+
+			// 批量绘制。
+			ctx.drawImage(canvasHide, 0, 0);
+
+
+		}());
+	</script>
+</body>
+</html>

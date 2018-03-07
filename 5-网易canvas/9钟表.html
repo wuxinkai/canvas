@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <canvas id="box" width="800" height="800"></canvas>
+</body>
+</html>
+<script type="text/javascript">
+    window.onload=function (ev) {
+        var oc =document.getElementById('box');
+        var oGc =oc.getContext('2d');
+        function toDraw() {
+            var x=200; //原点
+            var y=200;
+            var r=150;
+
+            oGc.clearRect(0,0,oc.width,oc.height);//晴空画布
+
+            var oDtate = new Date(); //获取本地时间
+            var oHours = oDtate.getHours()
+            var oMin = oDtate.getMinutes()
+            var oSen = oDtate.getSeconds()
+
+            //小时转化弧度
+            var oHoursValue = (-90 + oHours*30 + oMin/2)*Math.PI/180;
+            var oMinValue = (-90 + oMin*6)*Math.PI/180;
+            var oSenValue = (-90 + oSen*6)*Math.PI/180;
+
+            // oGc.moveTo(x,y);
+            // oGc.arc(x,y,r,0,6*Math.PI/180,false) //画圆
+            //
+            // oGc.stroke()
+            //
+    //分针
+             oGc.beginPath(); //开始
+            for (var i=0 ; i<60 ;i++){
+                oGc.moveTo(x,y); //中心 到原点
+                oGc.arc(x,y,r,6*i*Math.PI/180,6*(i+1)*Math.PI/180,false) //画圆
+            }
+
+            oGc.closePath(); //结束
+            oGc.stroke();
+
+            //覆盖一个圆盘
+            oGc.fillStyle ='white';
+            oGc.beginPath();
+            oGc.moveTo(x,y);
+            oGc.arc(x,y,r*19/20,0,360*(i*+1)*Math.PI/180,false);
+            oGc.closePath();
+            oGc.fill();
+
+//时针
+            oGc.lineWidth=3; //设置线宽
+            oGc.beginPath(); //开始
+            for (var i=0 ; i<12 ;i++){
+                oGc.moveTo(x,y); //中心 到原点
+                oGc.arc(x,y,r,30*i*Math.PI/180,30*(i+1)*Math.PI/180,false) //画圆
+            }
+
+            oGc.closePath(); //结束
+            oGc.stroke();
+
+
+            //再覆盖一个圆盘
+            oGc.fillStyle ='white';
+            oGc.beginPath();
+            oGc.moveTo(x,y);
+            oGc.arc(x,y,r*18/20,0,360*(i*+1)*Math.PI/180,false)
+            oGc.closePath();
+            oGc.fill();
+
+//设置时针
+            oGc.lineWidth=5;
+            oGc.beginPath();
+            oGc.moveTo(x,y);
+            oGc.arc(x,y,r*10/20,oHoursValue,oHoursValue,false);
+            oGc.closePath();
+            oGc.stroke();
+//分针
+            oGc.lineWidth=3;
+            oGc.beginPath();
+            oGc.moveTo(x,y);
+            oGc.arc(x,y,r*14/20,oMinValue,oMinValue,false);
+            oGc.closePath();
+            oGc.stroke();
+
+            oGc.lineWidth=1;
+            oGc.beginPath();
+            oGc.moveTo(x,y);
+            oGc.arc(x,y,r*16/20,oSenValue,oSenValue,false);
+            oGc.closePath();
+            oGc.stroke();
+        }
+
+        setInterval(toDraw,1000);
+        toDraw()
+    }
+</script>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>01Canvas案例-</title>
+	</head>
+<body>
+
+	<div id="container">
+		<canvas id="cavsElem">
+			你的浏览器不支持canvas，请升级浏览器
+		</canvas>
+	</div>
+
+	<script>
+		(function(){
+			var canvas = document.querySelector( '#cavsElem' );
+			var ctx = canvas.getContext( '2d' );
+
+			canvas.width = 600;
+			canvas.height = 600;
+			canvas.style.border = "1px solid #000";
+
+			  ctx.fillStyle = "rgba(255,0,0, .9)"
+			    ctx.shadowColor = "teal";
+			    ctx.shadowBlur = 10;
+			    ctx.shadowOffsetX = 10;
+			    ctx.shadowOffsetY = 10;
+			    ctx.fillRect(100, 100, 100, 100);
+
+			    //创建一个线性渐变
+			    //  var grd=ctx.createLinearGradient(0,0,170,0);
+			    // grd.addColorStop(0,"black");  //添加一个渐变颜色，第一个参数介于 0.0 与 1.0 之间的值，表示渐变中开始与结束之间的位置。
+			    // grd.addColorStop(.5, 'red');
+			    // grd.addColorStop(1,"white");  //添加一个渐变颜色
+			    // ctx.fillStyle =grd;           
+			    // ctx.fillRect(0, 0, 300, 300);
+
+
+
+			    var rlg = ctx.createRadialGradient(300,300,10,300,300,200);
+				rlg.addColorStop(0, 'teal');    //添加一个渐变颜色
+				rlg.addColorStop(.4, 'navy');
+				rlg.addColorStop(1, 'purple');
+				ctx.fillStyle = rlg;//设置 填充样式为延续渐变的样式
+				ctx.fillRect(100, 100, 500, 500);
+
+
+		}());
+	</script>
+</body>
+</html>

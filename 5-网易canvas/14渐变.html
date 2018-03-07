@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<canvas id="box" height="600" width="600"></canvas>
+</body>
+</html>
+<script type="text/javascript">
+    window.onload=function (ev) {
+        var oc = document.getElementById('box');
+        var oGc = oc.getContext('2d');
+
+      var obj = oGc.createLinearGradient(150,100,150,200);
+      obj.addColorStop(0,'red');
+      obj.addColorStop(1,'blue');
+      oGc.fillStyle =obj;
+      oGc.fillRect(150,100,100,100)
+
+    }
+</script>

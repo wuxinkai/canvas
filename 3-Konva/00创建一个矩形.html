@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>01进度条案例</title>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+            background-color: #f0f0f0;
+            overflow: hidden;
+        }
+    </style>
+    <script src="bower_components/konva/konva.js"></script>
+</head>
+<body>
+<!-- 存放canvas画布的容器 ，这个必须要有 -->
+<div id="container">
+</div>
+
+<script>
+    //第一步： 创建  宽高
+    var stage = new Konva.Stage({
+        container: 'container', //设置当前舞台的容器  id控制
+        width: window.innerWidth,//设置舞台的宽高全屏
+        height: window.innerHeight
+    });
+
+    //第二步： 创建层，一个舞台可以有多个层
+    var layer = new Konva.Layer();
+
+    //第三步： 把层添加到舞台上去。
+    stage.add(layer);
+
+
+    // 第四步： 创建形状对象，然后把形状放到层上去
+    var innerRect = new Konva.Rect({
+        x: 100, //
+        y: 100,
+        opacity:.6,
+        width: 100,
+        height: 100,
+        scaleX:2.2,
+        scaleY:1.2,
+        draggable:true,//可拖动
+        fill:'orange'
+    });
+
+    // 第五步： 把矩形放到层
+    layer.add( innerRect );
+
+    //第六步 把内容渲染到舞台
+    layer.draw()
+
+
+</script>
+</body>
+</html>

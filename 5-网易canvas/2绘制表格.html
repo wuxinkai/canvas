@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <canvas id="canvasElem"></canvas>
+</body>
+</html>
+<script type="text/javascript">
+    (function () {
+        var canvas = document.getElementById('canvasElem');
+        canvas.style.border = '1px solid red';
+        canvas.width=600;
+        canvas.height=600;
+
+        var ctx = canvas.getContext('2d'); //webgl  是3d
+
+        var redctH=10; //横着排列
+        var redctW=10; //竖着排列
+
+        for (var i=0;i<canvas.width/redctH;i++){
+            ctx.moveTo(0,i*redctH);//0*10  1*10 2*10   设置开始位置，y轴高度
+            ctx.lineTo(canvas.width,i*redctH); //设置线的宽度
+
+            ctx.moveTo(i*redctH,0);//x轴不断累加 y =0
+            ctx.lineTo(i*redctW,canvas.height) //设置线的长度
+        }
+
+        ctx.strokeStyle="#999";//设置边线颜色  可以用 rgb()  rgba()
+        ctx.lineWidth=.5; //设置线宽
+
+        ctx.stroke()
+    })()
+</script>

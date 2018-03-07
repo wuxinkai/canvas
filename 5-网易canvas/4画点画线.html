@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <canvas height="600" width="600" id="canvas"></canvas>
+</body>
+</html>
+<script type="text/javascript">
+    var oc =document.getElementById("canvas");
+    var oGC =oc.getContext('2d');
+    oGC.beginPath(); //开始标签
+    oGC.moveTo(100,100); //画点
+    oGC.lineTo(200,200); //端点样式  butt默认  round（圆角） square（高度多出为宽一半的值）
+    oGC.lineTo(300,200);
+    oGC.closePath();//闭合标签
+    oGC.stroke() //划线执行
+
+    oGC.beginPath();//---------开始
+    oGC.moveTo(100,200);
+    oGC.lineTo(200,300);
+    oGC.lineTo(300,300);
+    oGC.closePath();//-----------闭合
+    oGC.fill() //填充 默认黑色
+
+
+    oGC.beginPath();
+    oGC.rect(400,100,100,100);//矩形区域
+    oGC.closePath();
+    oGC.fill()
+   // oGC.clearRect(0,0,oc.width,oc.width) //删除画布
+
+</script>

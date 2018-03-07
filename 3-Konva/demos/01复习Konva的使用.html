@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<title></title>
+	<style>
+		body {
+			padding: 0;
+			margin: 0;
+			background-color: #f0f0f0;
+			overflow: hidden;
+		}
+	</style>
+	<script src="bower_components/konva/konva.min.js"></script>
+</head>
+<body>
+	<div id="container">
+	</div>
+
+	<script>
+		//创建舞台
+		var stage = new Konva.Stage({
+			container: 'container',
+			width: window.innerWidth,//全屏
+			height: window.innerHeight
+		});
+
+		//创建层
+		var layer = new Konva.Layer();
+		stage.add(layer);
+	
+		//中心点坐标
+		var cenX = stage.width() / 2;
+		var cenY = stage.height() / 2;
+
+		var rect = new Konva.Rect({
+			x: 100,
+			y: 100,
+			width: 200,
+			height: 200,
+			fill: 'green',
+			stroke: 'blue',
+			strokeWidth: 4,
+			draggable: true
+		});
+
+		layer.add( rect );
+
+		layer.draw();
+
+		rect.on('click', function(e) {
+			console.log('rect click');
+			console.log(e);
+			rect.off('click');
+		});
+
+
+
+		
+	</script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<canvas id="box" height="600" width="600"></canvas>
+</body>
+</html>
+<script type="text/javascript">
+    window.onload=function (ev) {
+        var oc = document.getElementById('box');
+        var oGc = oc.getContext('2d');
+        oGc.font = '60px impact';
+        oGc.textBaseline ='top';//
+
+        oGc.shadowOffsetX =10; //阴影
+        oGc.shadowColor ='yellow';
+
+        oGc.shadowBlur =5 //模糊
+
+        oGc.fillText('王小狗',200,200);
+        oGc.strokeText('王小狗',400,200)
+
+    }
+</script>

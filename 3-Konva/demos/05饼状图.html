@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<title>05饼状图</title>
+	<style>
+		body {
+			padding: 0;
+			margin: 0;
+			background-color: #f0f0f0;
+			overflow: hidden;
+		}
+	</style>
+	<script src="bower_components/konva/konva.min.js"></script>
+</head>
+<body>
+	<div id="container">
+	</div>
+
+	<script>
+		//创建舞台
+		var stage = new Konva.Stage({
+			container: 'container',
+			width: window.innerWidth,//全屏
+			height: window.innerHeight
+		});
+
+		//创建层
+		var layer = new Konva.Layer();
+		stage.add(layer);
+	
+		//中心点坐标
+		var cenX = stage.width() / 2;
+		var cenY = stage.height() / 2;
+
+	    var data = [ 
+		    	{ name: "前端", value: .25, color: '#e0e'  },
+		    	{ name: "php",  value: .2,  color: 'orange'},
+		    	{ name: "UI",	value: .3,	color: 'blue'  },
+				{ name: "C++",	value: .05,	color: 'green' },
+				{ name: "游戏",	value: .1,	color: 'purple'},
+				{ name: "Java",	value: .1,	color: 'red'   }
+			];
+
+		var wedgeGroup = new Konva.Group({
+			x: cenX,
+			y: cenY
+		});
+
+		var textGroup = new Konva.Group({
+			x: cenX,
+			y: cenY
+		});
+
+		var radius = 100;
+		var tempAngle = -90;
+		data.forEach(function(item ,i ) {
+			var angle =  data[i].value * 360;
+			var wedge = new Konva.Wedge({
+				x: 0,
+				y: 0,
+				radius: radius,
+				fill: data[i].color,
+				angle: 360 * data[i].value,
+				rotation: tempAngle
+			});
+
+			var textX = (radius+20) * Math.cos(Math.PI * ( tempAngle + 1/2 * angle)/180);
+			var textY = (radius+20) * Math.sin(Math.PI * (tempAngle + 1/2 * angle)/180);
+
+			var text = new Konva.Text({
+				x: (radius+20) * Math.cos(Math.PI * ( tempAngle + 1/2 * angle)/180),
+				y: (radius+20) * Math.sin(Math.PI * (tempAngle + 1/2 * angle)/180),
+				text: data[i].name
+			});
+			if( tempAngle + 1/2* angle > 90 && tempAngle+ 1/2*angle< 270) {
+				 text.x(textX - text.width());
+			}
+
+			textGroup.add( text);
+
+			tempAngle += angle;
+			wedgeGroup.add( wedge );
+
+
+		});
+
+		var outerCircle = new Konva.Circle({
+			x: 0,
+			y: 0,
+			radius: radius + 10,
+			stroke: 'lightgreen',
+			strokeWidth: 1,
+		});
+		this.wedgeGroup.add( outerCircle );
+
+		layer.add( textGroup );
+		layer.add( wedgeGroup);
+		layer.draw();
+
+		var index = 0;
+
+		stage.on('contentClick', function(){
+			index = 0;
+			wedgeGroup.find('Wedge').each(function(item){
+				item.angle(0);
+			});
+			showAnimage();
+			textGroup.opacity(0);
+			textGroup.to({
+				opacity: .9,
+				duration: 2
+			});
+		});
+
+		function showAnimage() {
+			var item = wedgeGroup.find('Wedge')[index];
+			item.angle(0).to({
+				duration: data[index].value * 2,
+				angle: data[index].value*360,
+				onFinish: function() {
+					index++;
+					if( index >= data.length ) {
+						return;
+					}
+					showAnimage();
+				}
+			});
+		}
+	</script>
+</body>
+</html>

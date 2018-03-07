@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>11Canvas案例-面向对象版本的矩形</title>
+		<script src="js/ItcastRect.js"></script>
+	</head>
+<body>
+
+	<div id="container">
+		<canvas id="cavsElem1">
+			你的浏览器不支持canvas，请升级浏览器
+		</canvas>
+
+		<canvas id="cavsElem2">
+			你的浏览器不支持canvas，请升级浏览器
+		</canvas>
+	</div>
+
+	<img src="" id="imgId" alt="">
+
+	<script>
+		(function(){
+			var canvas1 = document.querySelector( '#cavsElem1' );
+			var canvas2 = document.querySelector( '#cavsElem2' );
+			var ctx1 = canvas1.getContext( '2d' );
+			var ctx2 = canvas2.getContext( '2d' );
+
+			canvas1.width = 600;
+			canvas1.height = 600;
+			canvas1.style.border = "1px solid #000";
+
+			canvas2.width = 600;
+			canvas2.height = 600;
+			canvas2.style.border = "1px solid #000";
+
+			//创建矩形
+			var rect = new ItcastRect({
+				x: 100,				// 矩形x坐标
+				y: 100,
+				w: 100,
+				h: 100,
+				opacity: .6,	   //透明度
+				rotation: 60,	   //旋转角度
+				scaleX: 1,		   //放大缩小的倍数
+				scaleY: 1,
+				fillStyle: 'purple',	//填充的样式
+				strokeStyle: 'yellow'
+			});
+			//渲染矩形
+			rect.render( ctx1 );
+
+			// for( var i= 0; i < 100; i++ ) {
+			// 	var r = new ItcastRect({
+			// 		x: Math.random() * 100,
+			// 		y: Math.random() * 100,
+			// 		w: Math.random() * 100,
+			// 		h: Math.random() * 100,
+			// 		rotation: Math.random() * 90,
+			// 		opacity: Math.random()
+			// 	});
+			// 	r.render(ctx);
+			// }
+
+
+			//把canvas转成一个图片
+			// console.log(canvas.toDataURL('image/jpeg', .6));
+
+
+
+
+			setInterval(function() {
+				ctx1.clearRect( 0,  0 , canvas1.width, canvas1.height);
+				rect.x += 10;
+				rect.render(ctx1);
+
+				// 把canvas输出到一张图片上去
+				// var img = document.getElementById('imgId');
+				// img.src = canvas.toDataURL('image/png', .5);
+
+				//把一个画布渲染到另外一个画布上。
+
+				ctx2.drawImage(canvas1, 0, 0);
+
+			}, 100)
+
+
+
+		}());
+	</script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>01Canvas案例-</title>
+	</head>
+<body>
+
+	<div id="container">
+		<canvas id="cavsElem">
+			你的浏览器不支持canvas，请升级浏览器
+		</canvas>
+	</div>
+
+	<script>
+		(function(){
+			var canvas = document.querySelector( '#cavsElem' );
+			var ctx = canvas.getContext( '2d' );
+
+			canvas.width = 600;
+			canvas.height = 600;
+			canvas.style.border = "1px solid #000";
+			// 前两个参数是:矩形的x,y坐标，　后面两个参数：矩形的宽高
+			//ctx.rect(x,y,w,h);
+			ctx.rect(100,100,50,50);//绘制矩形
+			ctx.stroke();
+
+			//描边矩形
+			ctx.strokeRect(200, 200, 100, 150);
+
+			//填充矩形
+			ctx.fillRect(300, 300, 40, 40);
+		}());
+	</script>
+</body>
+</html>

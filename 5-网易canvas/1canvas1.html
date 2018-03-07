@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+
+    </style>
+</head>
+<body>
+<!--ie9 以上支持-->
+<!--设施宽高 不要用css设置  默认width:300 height:150-->
+    <canvas id="dome" width="600" height="600">
+
+    </canvas>
+</body>
+</html>
+<script type="text/javascript">
+    //第一步 拿到canvas的标签
+  var canvas= document.getElementById('dome');
+    canvas.style.border = '1px solid red';
+    canvas.width = 600;
+    canvas.height = 600;
+
+  //第二部 拿到上下文
+  var ctx = canvas.getContext('2d') //webgl  是3d
+
+   //第三部 绘制
+    ctx.moveTo(100,100) //画笔移动到 y x 100  100的位置
+    ctx.lineTo(200,100) //从画笔的位置 画一条直线到 200 100点
+    ctx.lineTo(100,200) //设置一条线
+
+
+    ctx.closePath()//路径闭合
+
+    ctx.strokeStyle="red";//设置边线颜色  可以用 rgb()  rgba()
+    ctx.lineWidth=4 //设置线宽
+
+    ctx.fillStyle='pink'; //填充颜色
+    ctx.fill()//进行填充
+
+    ctx.stroke();//stroke描边的意思
+
+</script>

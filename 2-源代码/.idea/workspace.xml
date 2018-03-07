@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c723d1d2-6dc4-4f11-93e5-2108b5fe7e73" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/4-源代码/demos/01绘制矩形和三角形.html" afterPath="$PROJECT_DIR$/4-源代码/demos/01绘制矩形和三角形.html" />
+      <change beforePath="$PROJECT_DIR$/4-源代码/demos/02绘制表格.html" afterPath="$PROJECT_DIR$/4-源代码/demos/02绘制表格.html" />
+      <change beforePath="$PROJECT_DIR$/4-源代码/demos/03画画板.html" afterPath="$PROJECT_DIR$/4-源代码/demos/03画画板.html" />
+      <change beforePath="$PROJECT_DIR$/4-源代码/demos/04填充矩形.html" afterPath="$PROJECT_DIR$/4-源代码/demos/04填充矩形.html" />
+      <change beforePath="$PROJECT_DIR$/4-源代码/demos/05绘制圆形.html" afterPath="$PROJECT_DIR$/4-源代码/demos/05绘制圆形.html" />
+      <change beforePath="$PROJECT_DIR$/4-源代码/demos/06绘制饼状图.html" afterPath="$PROJECT_DIR$/4-源代码/demos/06绘制饼状图.html" />
+      <change beforePath="$PROJECT_DIR$/4-源代码/demos/07文字绘制.html" afterPath="$PROJECT_DIR$/4-源代码/demos/07文字绘制.html" />
+      <change beforePath="$PROJECT_DIR$/4-源代码/demos/08绘制图片.html" afterPath="$PROJECT_DIR$/4-源代码/demos/08绘制图片.html" />
+      <change beforePath="$PROJECT_DIR$/4-源代码/demos/09绘制图片裁剪.html" afterPath="$PROJECT_DIR$/4-源代码/demos/09绘制图片裁剪.html" />
+      <change beforePath="$PROJECT_DIR$/4-源代码/demos/10序列帧动画.html" afterPath="$PROJECT_DIR$/4-源代码/demos/10序列帧动画.html" />
+      <change beforePath="$PROJECT_DIR$/4-源代码/demos/11面向对象版本的动画帧.html" afterPath="$PROJECT_DIR$/4-源代码/demos/11面向对象版本的动画帧.html" />
+      <change beforePath="$PROJECT_DIR$/4-源代码/demos/12设置box盒子阴影.html" afterPath="$PROJECT_DIR$/4-源代码/demos/12设置box盒子阴影.html" />
+      <change beforePath="$PROJECT_DIR$/4-源代码/demos/13设置线性渐变.html" afterPath="$PROJECT_DIR$/4-源代码/demos/13设置线性渐变.html" />
+      <change beforePath="$PROJECT_DIR$/4-源代码/demos/14圆形渐变.html" afterPath="$PROJECT_DIR$/4-源代码/demos/14圆形渐变.html" />
+      <change beforePath="$PROJECT_DIR$/4-源代码/demos/15背景图填充.html" afterPath="$PROJECT_DIR$/4-源代码/demos/15背景图填充.html" />
+      <change beforePath="$PROJECT_DIR$/4-源代码/demos/16缩放案例.html" afterPath="$PROJECT_DIR$/4-源代码/demos/16缩放案例.html" />
+      <change beforePath="$PROJECT_DIR$/4-源代码/demos/17位移画布.html" afterPath="$PROJECT_DIR$/4-源代码/demos/17位移画布.html" />
+      <change beforePath="$PROJECT_DIR$/4-源代码/demos/18旋转画布.html" afterPath="$PROJECT_DIR$/4-源代码/demos/18旋转画布.html" />
+      <change beforePath="$PROJECT_DIR$/4-源代码/demos/19矩形旋转.html" afterPath="$PROJECT_DIR$/4-源代码/demos/19矩形旋转.html" />
+      <change beforePath="$PROJECT_DIR$/4-源代码/demos/20画布裁剪.html" afterPath="$PROJECT_DIR$/4-源代码/demos/20画布裁剪.html" />
+      <change beforePath="$PROJECT_DIR$/4-源代码/demos/21画布输出dataurl.html" afterPath="$PROJECT_DIR$/4-源代码/demos/21画布输出dataurl.html" />
+      <change beforePath="$PROJECT_DIR$/4-源代码/demos/22画布之间的相互绘制.html" afterPath="$PROJECT_DIR$/4-源代码/demos/22画布之间的相互绘制.html" />
+      <change beforePath="$PROJECT_DIR$/4-源代码/demos/23线的样式.html" afterPath="$PROJECT_DIR$/4-源代码/demos/23线的样式.html" />
+      <change beforePath="$PROJECT_DIR$/4-源代码/demos/24线条相交的样式.html" afterPath="$PROJECT_DIR$/4-源代码/demos/24线条相交的样式.html" />
+      <change beforePath="$PROJECT_DIR$/4-源代码/demos/25绘制贝塞尔曲线.html" afterPath="$PROJECT_DIR$/4-源代码/demos/25绘制贝塞尔曲线.html" />
+      <change beforePath="$PROJECT_DIR$/4-源代码/demos/26绘制圆角矩形.html" afterPath="$PROJECT_DIR$/4-源代码/demos/26绘制圆角矩形.html" />
+      <change beforePath="$PROJECT_DIR$/4-源代码/demos/27konva入门.html" afterPath="$PROJECT_DIR$/4-源代码/demos/27konva入门.html" />
+      <change beforePath="$PROJECT_DIR$/4-源代码/demos/28konva进阶.html" afterPath="$PROJECT_DIR$/4-源代码/demos/28konva进阶.html" />
+      <change beforePath="$PROJECT_DIR$/4-源代码/demos/29konva精灵.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/4-源代码/demos/30konva文字.html" afterPath="$PROJECT_DIR$/4-源代码/demos/30konva文字.html" />
+      <change beforePath="$PROJECT_DIR$/4-源代码/demos/31konvaStar.html" afterPath="$PROJECT_DIR$/4-源代码/demos/31konvaStar.html" />
+      <change beforePath="$PROJECT_DIR$/4-源代码/demos/32进度条案例.html" afterPath="$PROJECT_DIR$/4-源代码/demos/32进度条案例.html" />
+      <change beforePath="$PROJECT_DIR$/4-源代码/demos/33webitcast.html" afterPath="$PROJECT_DIR$/4-源代码/demos/33webitcast.html" />
+      <change beforePath="$PROJECT_DIR$/4-源代码/demos/34加载动画.html" afterPath="$PROJECT_DIR$/4-源代码/demos/34加载动画.html" />
+      <change beforePath="$PROJECT_DIR$/4-源代码/demos/35饼状图-面向对象版本案例.html" afterPath="$PROJECT_DIR$/4-源代码/demos/35饼状图-面向对象版本案例.html" />
+      <change beforePath="$PROJECT_DIR$/4-源代码/demos/36柱状图面向对象版本.html" afterPath="$PROJECT_DIR$/4-源代码/demos/36柱状图面向对象版本.html" />
+      <change beforePath="$PROJECT_DIR$/4-源代码/demos/37加载进度面向对象版本.html" afterPath="$PROJECT_DIR$/4-源代码/demos/37加载进度面向对象版本.html" />
+      <change beforePath="$PROJECT_DIR$/4-源代码/demos/38改进版本的饼状图.html" afterPath="$PROJECT_DIR$/4-源代码/demos/38改进版本的饼状图.html" />
+      <change beforePath="$PROJECT_DIR$/4-源代码/demos/39背景动画.html" afterPath="$PROJECT_DIR$/4-源代码/demos/39背景动画.html" />
+      <change beforePath="$PROJECT_DIR$/4-源代码/demos/40声音处理.html" afterPath="$PROJECT_DIR$/4-源代码/demos/40声音处理.html" />
+      <change beforePath="$PROJECT_DIR$/4-源代码/demos/41综合微信广告案例.html" afterPath="$PROJECT_DIR$/4-源代码/demos/41综合微信广告案例.html" />
+      <change beforePath="$PROJECT_DIR$/4-源代码/demos/imgs/gameImgs/梦金属混音-角色人物-素材说明.txt" afterPath="$PROJECT_DIR$/4-源代码/demos/imgs/gameImgs/梦金属混音-角色人物-素材说明.txt" />
+      <change beforePath="$PROJECT_DIR$/4-源代码/demos/imgs/gameImgs/爱给网 - 专业游戏素材下载网站.txt" afterPath="$PROJECT_DIR$/4-源代码/demos/imgs/gameImgs/爱给网 - 专业游戏素材下载网站.txt" />
+      <change beforePath="$PROJECT_DIR$/4-源代码/demos/js/32demo.js" afterPath="$PROJECT_DIR$/4-源代码/demos/js/32demo.js" />
+      <change beforePath="$PROJECT_DIR$/4-源代码/demos/js/41weixin.js" afterPath="$PROJECT_DIR$/4-源代码/demos/js/41weixin.js" />
+      <change beforePath="$PROJECT_DIR$/4-源代码/demos/js/KonvaExtend.js" afterPath="$PROJECT_DIR$/4-源代码/demos/js/KonvaExtend.js" />
+      <change beforePath="$PROJECT_DIR$/4-源代码/demos/weixin.html" afterPath="$PROJECT_DIR$/4-源代码/demos/weixin.html" />
+    </list>
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="13使用konva库开发一个矩形.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/13使用konva库开发一个矩形.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="03面向对象的使用铺垫.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/03面向对象的使用铺垫.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="03---绘制坐标系.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/03---绘制坐标系.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="9" column="4" lean-forward="false" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="12canvs优化.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/12canvs优化.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="02面向对象铺垫.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/02面向对象铺垫.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-735">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="09位移画布和旋转缩放.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/09位移画布和旋转缩放.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="04-绘制坐标系.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/04-绘制坐标系.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/4-源代码/demos" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/demos/06绘制饼状图.html" />
+        <option value="$PROJECT_DIR$/demos/07文字绘制.html" />
+        <option value="$PROJECT_DIR$/demos/08绘制图片.html" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
+    <option name="width" value="1440" />
+    <option name="height" value="805" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="2-源代码" type="b2602c69:ProjectViewProjectNode" />
+              <item name="2-源代码" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="HbShouldOpenHtmlAsHb" value="" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c723d1d2-6dc4-4f11-93e5-2108b5fe7e73" name="Default" comment="" />
+      <created>1520336122337</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1520336122337</updated>
+      <workItem from="1520336123591" duration="3071000" />
+      <workItem from="1520426965150" duration="868000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="3939000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="23" width="1440" height="805" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/13使用konva库开发一个矩形.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/03面向对象的使用铺垫.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/03---绘制坐标系.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/04-绘制坐标系.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/13使用konva库开发一个矩形.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demos/41综合微信广告案例.html" />
+    <entry file="file://$PROJECT_DIR$/04-绘制坐标系.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/03面向对象的使用铺垫.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demos/05绘制圆形.html" />
+    <entry file="file://$PROJECT_DIR$/demos/06绘制饼状图.html" />
+    <entry file="file://$PROJECT_DIR$/demos/07文字绘制.html" />
+    <entry file="file://$PROJECT_DIR$/demos/08绘制图片.html" />
+    <entry file="file://$PROJECT_DIR$/03---绘制坐标系.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" column="4" lean-forward="false" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/12canvs优化.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/02面向对象铺垫.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-735">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/09位移画布和旋转缩放.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

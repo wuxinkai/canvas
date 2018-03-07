@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<ul>
+    <li>点</li>
+    <li>击</li>
+    <li>文</li>
+    <li>字</li>
+    <li>是</li>
+    <li>王</li>
+    <li>小</li>
+    <li>狗</li>
+</ul>
+<canvas id="box" height="600" width="600"></canvas>
+</body>
+</html>
+<script type="text/javascript">
+    window.onload=function (ev) {
+        var oc = document.getElementById('box');
+        var oGc = oc.getContext('2d');
+        var  aLi =document.getElementsByTagName('li');
+        for (var i=0;i<aLi.length;i++){
+            aLi[i].onclick =function (ev2) {
+                var str= this.innerHTML;
+                var h =180;
+                oGc.clearRect(0,0,oc.width,oc.height)
+                oGc.font =h+'px impact';
+                oGc.textBaseline ='top';
+                oGc.fillStyle ='red';
+                var w = oGc.measureText(str).width;
+                oGc.fillText(str,(oc.width-w)/2,(oc.height-h)/2)
+            }
+        }
+
+    }
+</script>

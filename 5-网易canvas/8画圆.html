@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>arc（x,y,半径,起始弧度，结束弧度，旋转方向）</p>
+<p>x y 起始位置</p>
+<p>弧度和角度关系 弧度=角度*Math</p>
+<canvas id="box" height="800" width="800"></canvas>
+</body>
+</html>
+<script type="text/javascript">
+    var oc =document.getElementById('box')
+    var oGc =oc.getContext('2d');
+    oGc.moveTo(200,200);
+    //弧度 = 角度*math.PI/180
+    oGc.arc(200,200,150,0,90*Math.PI/180,false);
+    oGc.closePath()
+    oGc.stroke();
+
+</script>

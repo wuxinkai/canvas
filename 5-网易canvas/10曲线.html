@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <canvas id="box" height="600" width="600"></canvas>
+</body>
+</html>
+<script type="text/javascript">
+    window.onload=function (ev) {
+        var canvas = document.getElementById('box');
+        var oGc = canvas.getContext('2d');
+        oGc.moveTo(100,200);//起始点
+        oGc.arcTo(100,100,200,100,50); //设置曲线
+        //        第一个点  第二个点  半径
+        oGc.stroke();
+
+
+        oGc.moveTo(300,200); //起始点
+        oGc.quadraticCurveTo(300,300,200,100); //设置曲线
+        //      第一组  控制点    第二组是结束坐标
+        oGc.stroke()
+
+        oGc.moveTo(400,400); //起始点
+        oGc.bezierCurveTo(600,100,300,300,300,100); //设置曲线
+        //      第一组  控制点    第二组是控制点   第三组结束
+        oGc.stroke()
+    }
+</script>

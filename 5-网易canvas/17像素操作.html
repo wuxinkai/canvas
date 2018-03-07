@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<canvas id="box" height="600" width="600"></canvas>
+</body>
+</html>
+<script type="text/javascript">
+    window.onload=function (ev) {
+        var oc = document.getElementById('box');
+        var oGc = oc.getContext('2d');
+      oGc.fillRect(0,0,100,100);
+      var oImg = oGc.getImageData(0,0,100,100);
+        console.log(oImg.width);//一行像素
+        console.log(oImg.height);//一列像素
+        console.log(oImg.data);
+
+        oGc.putImageData(oImg,100,100)
+
+
+
+    }
+</script>
