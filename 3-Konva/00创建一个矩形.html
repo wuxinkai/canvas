@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -12,14 +13,15 @@
             overflow: hidden;
         }
     </style>
-    <script src="bower_components/konva/konva.js"></script>
+   <script src="./js/konva.min.js"></script>
 </head>
-<body>
-<!-- 存放canvas画布的容器 ，这个必须要有 -->
-<div id="container">
-</div>
 
-<script>
+<body>
+    <!-- 存放canvas画布的容器 ，这个必须要有 -->
+    <div id="container">
+    </div>
+
+    <script>
     //第一步： 创建  宽高
     var stage = new Konva.Stage({
         container: 'container', //设置当前舞台的容器  id控制
@@ -54,6 +56,7 @@
     layer.draw()
 
 
-</script>
+    </script>
 </body>
+
 </html>

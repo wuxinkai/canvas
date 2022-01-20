@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -12,9 +13,11 @@
 			overflow: hidden;
 		}
 	</style>
-	<script src="bower_components/konva/konva.min.js"></script>
+	   <script src="./js/konva.min.js"></script>
+	<script src="js/CircleText.js"></script>
 	<script src="js/PieChart.js"></script>
 </head>
+
 <body>
 	<div id="container">
 	</div>
@@ -30,18 +33,18 @@
 		//创建层
 		var layer = new Konva.Layer();
 		stage.add(layer);
-	
+
 		//中心点坐标
 		var cenX = stage.width() / 2;
 		var cenY = stage.height() / 2;
 
-	   var data = [ 
-	    	{ name: "前端", value: .25, color: '#e0e'  },
-	    	{ name: "php",  value: .2,  color: 'orange'},
-	    	{ name: "UI",	value: .3,	color: 'blue'  },
-			{ name: "C++",	value: .05,	color: 'green' },
-			{ name: "游戏",	value: .1,	color: 'purple'},
-			{ name: "Java",	value: .1,	color: 'red'   }
+		var data = [
+			{ name: "前端", value: .25, color: '#e0e' },
+			{ name: "php", value: .2, color: 'orange' },
+			{ name: "UI", value: .3, color: 'blue' },
+			{ name: "C++", value: .05, color: 'green' },
+			{ name: "游戏", value: .1, color: 'purple' },
+			{ name: "Java", value: .1, color: 'red' }
 		];
 
 		var p = new PieChart({
@@ -51,11 +54,12 @@
 			data: data
 		});
 
-	   p.addToGroupOrLayer( layer );
-	   layer.draw();
+		p.addToGroupOrLayer(layer);
+		layer.draw();
 
-	   p.playAnimate();
-		
+		p.playAnimate();
+
 	</script>
 </body>
+
 </html>

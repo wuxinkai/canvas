@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -13,8 +14,9 @@
 			overflow: hidden;
 		}
 	</style>
-	<script src="bower_components/konva/konva.min.js"></script>
+	<script src="js/CircleText.js"></script>
 </head>
+
 <body>
 	<div id="container">
 	</div>
@@ -30,16 +32,16 @@
 		//创建层
 		var layer = new Konva.Layer();
 		stage.add(layer);
-	
+
 		//中心点坐标
 		var cenX = stage.width() / 2; //注意Konva获取数据都是用方法获取值
 		var cenY = stage.height() / 2;
 
-		var x = 1/8 * stage.width();
+		var x = 1 / 8 * stage.width();
 		var y = cenY;
 
-		var height = 1 / 12 * stage.height(); 
-		var maxWidth =  3/4 * stage.width();
+		var height = 1 / 12 * stage.height();
+		var maxWidth = 3 / 4 * stage.width();
 		//绘制一个进度条
 		var innerRect = new Konva.Rect({
 			x: x,
@@ -52,7 +54,7 @@
 		});
 
 		//把内部的矩形放到层里面去
-		layer.add( innerRect );
+		layer.add(innerRect);
 
 		//创建外边框矩形
 		var outerRect = new Konva.Rect({
@@ -65,23 +67,23 @@
 			// fill: 'green', // 如果设置了fill的样式，那么进行填充
 			cornerRadius: height / 2 // 设置圆角的半径
 		});
-		layer.add( outerRect );
+		layer.add(outerRect);
 
 		layer.draw();
 
 
 		var loadImgIndex = 0;
-		var imgSrcArray = ['1.png','2.png'];//要加载的图片的数组
-		
-		for( var i =0; i< imgSrcArray.length ; i++ ) {
+		var imgSrcArray = ['1.png', '2.png'];//要加载的图片的数组
+
+		for (var i = 0; i < imgSrcArray.length; i++) {
 			var img = new Image();
 			img.src = imgSrcArray[i];
-			img.onload = function() {
-				loadImgIndex +=1;//每加载一张图片，索引加1
+			img.onload = function () {
+				loadImgIndex += 1;//每加载一张图片，索引加1
 
 				innerRect.to({ //进度条动画
 					//设置内部的 进度条宽度动画到  
-					width: maxWidth * (loadImgIndex / imgSrcArray.length ),
+					width: maxWidth * (loadImgIndex / imgSrcArray.length),
 					//动画的持续时间
 					duration: 1.4,
 					// 动画的效果
@@ -92,8 +94,9 @@
 		}
 
 		//Ｋｏｎｖａ的动画系统
-		
-		
+
+
 	</script>
 </body>
+
 </html>
